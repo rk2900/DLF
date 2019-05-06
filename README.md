@@ -9,6 +9,22 @@ If you have any problems, please feel free to contact the authors [Kan Ren](http
 ### Setups
 We recommend the settings of Tensorflow (>=1.3) and Python (2.7.6).
 
+### Data Preparation
+The full dataset can be downloaded at [this link](http://bit.ly/2VTMMdm) and the corresponding MD5 code is `841698b0dd8718b1b4a4ff2e54bb72b4`.
+
+### Data specification
+Each subset of the data contains `.yzbx.txt`, `featureindex.txt` and `.log.txt`.
+We created the first data file `.log.txt` from the raw data of the original data source (please refer to our paper).
+Then we made feature engineering according to the created feature dictionary `featindex.txt`.
+The corresponding feature engineered data are in `.yzbx.txt`.
+
+If you need to reproduce the experiemtns, you may run over `.yzbx.txt`.
+
+In `yzbx.txt` file, each line is a sample containing the "`yzbx`" data, the information is splitted by `SPACE`.
+Here `z` is the true market price, `b` is the proposed bid price and `x` is the list of features (multi-hot encoded as `feat_id:1`).
+In the experiment, we only use `zbx` data.
+Note that, for the uncensored data, `z <= b`, while for the censored data, `z > b`.
+
 ### Run the Codes
 The running command are listed as below.
 ```
