@@ -1,3 +1,6 @@
 [submodule "bid-lands"]
 	path = bid-lands
 	url = git@github.com:qinjr/bid-lands.git
+[submodule "MTLSA"]
+	path = MTLSA
+	url = git@github.com:qinjr/MTLSA.git
