@@ -7,7 +7,7 @@ If you have any problems, please feel free to contact the authors [Kan Ren](http
 > The emergence of real-time auction in online advertising has drawn huge attention of modeling the market competition, i.e., bid landscape forecasting. The problem is formulated as to forecast the probability distribution of market price for each ad auction. With the consideration of the censorship issue which is caused by the second-price auction mechanism, many researchers have devoted their efforts on bid landscape forecasting by incorporating survival analysis from medical research field. However, most existing solutions mainly focus on either counting-based statistics of the segmented sample clusters, or learning a parameterized model based on some heuristic assumptions of distribution forms. Moreover, they neither consider the sequential patterns of the feature over the price space. In order to capture more sophisticated yet flexible patterns at fine-grained level of the data, we propose a Deep Landscape Forecasting (DLF) model which combines deep learning for probability distribution forecasting and survival analysis for censorship handling. Specifically, we utilize a recurrent neural network to flexibly model the conditional winning probability w.r.t. each bid price. Then we conduct the bid landscape forecasting through probability chain rule with strict mathematical derivations. And, in an end-to-end manner, we optimize the model by minimizing two negative likelihood losses with comprehensive motivations. Without any specific assumption for the distribution form of bid landscape, our model shows great advantages over previous works on fitting various sophisticated market price distributions. In the experiments over two large-scale real-world datasets, our model significantly outperforms the state-of-the-art solutions under various metrics.
 
 ### Setups
-
+We recommend the settings of Tensorflow (>=1.3) and Python (2.7.6).
 
 ### Run the Codes
 The running command are listed as below.
@@ -22,3 +22,12 @@ python DLF.py 0.0001     # for DLF
 ```
 
 ### Citations
+```
+@inproceedings{ren2019deep,
+  title={Deep Landscape Forecasting for Real-time Bidding Advertising},
+  author={Ren, Kan and Qin, Jiarui and Zheng, Lei and Zhang, Weinan and Yu, Yong},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  year={2019},
+  organization={ACM}
+}
+```
