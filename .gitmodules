@@ -1,0 +1,3 @@
+[submodule "bid-lands"]
+	path = bid-lands
+	url = git@github.com:qinjr/bid-lands.git
