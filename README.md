@@ -42,7 +42,7 @@ python DLF.py 0.0001     # for DLF
 @inproceedings{ren2019deep,
   title={Deep Landscape Forecasting for Real-time Bidding Advertising},
   author={Ren, Kan and Qin, Jiarui and Zheng, Lei and Zhang, Weinan and Yu, Yong},
-  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery \& Data Mining},
+  booktitle={Proceedings of the 25th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
   year={2019},
   organization={ACM}
 }
