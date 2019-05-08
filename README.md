@@ -12,6 +12,10 @@ We recommend the settings of Tensorflow (>=1.3) and Python (2.7.6).
 ### Data Preparation
 The full dataset can be downloaded at [this link](http://bit.ly/2VTMMdm) and the corresponding MD5 code is `841698b0dd8718b1b4a4ff2e54bb72b4`.
 
+The raw data of iPinYou can be downloaded from [Dropbox](https://www.dropbox.com/s/txz0ms0axqf7jrl/ipinyou.contest.dataset.7z?dl=0).
+
+The feature engineering code is [here](https://github.com/rk2900/make-ipinyou-data), which is forked and slightly different to the original repository.
+
 ### Data specification
 Each subset of the data contains `.yzbx.txt`, `featureindex.txt` and `.log.txt`.
 We created the first data file `.log.txt` from the raw data of the original data source (please refer to our paper).
