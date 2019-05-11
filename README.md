@@ -11,6 +11,10 @@ If you have any problems, please feel free to contact the authors [Kan Ren](http
 ### Setups
 We recommend the settings of Tensorflow (>=1.3) and Python (2.7.6).
 
+The models are trained under the same hardware settings with an Intel(R) Core(TM) i7-6900K CPU processor, an NVIDIA GeForce GTX 1080Ti GPU processor and 128 GB memory. The training time of each compared model is less than ten hours (as reported from the slowest training model MTLSA) on each dataset.
+
+All the models are trained until convergence and we consider learning rate from {1e-4, 1e-5, 1e-3, 1e-3}. The value of $\alpha$ is tuned to 0.25. Batch size is fixed on 128 and embedding dimension is 32. All the deep learning models take input features and feed through an embedding layer for the subsequent feedforward calculation. The hyperparameters of each model are tuned and the best performances have been reported.
+
 ### Data Preparation
 The full dataset can be downloaded at [this link](http://bit.ly/2VTMMdm) and the corresponding MD5 code is `841698b0dd8718b1b4a4ff2e54bb72b4`.
 
