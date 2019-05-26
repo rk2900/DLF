@@ -33,7 +33,7 @@ If you need to reproduce the experiemtns, you may run over `.yzbx.txt`.
 In `yzbx.txt` file, each line is a sample containing the "`yzbx`" data, the information is splitted by `SPACE`.
 Here `z` is the true market price, `b` is the proposed bid price and `x` is the list of features (multi-hot encoded as `feat_id:1`).
 In the experiment, we only use `zbx` data.
-Note that, for the uncensored data, `z <= b`, while for the censored data, `z > b`.
+Note that, for the uncensored data, `z < b`, while for the censored data, `z >= b`.
 
 ### Run the Codes
 The running command are listed as below.
